@@ -1,0 +1,57 @@
+body {
+    background: #f6f6f6;
+}
+
+.page-container {
+    background: #fff;
+}
+    
+.main-col {
+    background: #fff;
+    margin-top: -100px;
+}
+
+.card-group>.card+.card {
+    border-left: 1px solid rgba(0,0,0,0.125);
+}
+
+.card.col-4,
+.card.col-8 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.card.col-8 .card-header {
+    border-bottom: 0;
+}
+
+.constitution ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+.constitution ol > li {
+  display: table;
+  counter-increment: item;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+
+.constitution ol > li:before {
+  content: counters(item, ".") ".";
+  display: table-cell;
+  padding-right: 0.6em;    
+}
+
+.constitution ol li ol > li {
+  font-size: 0.9375rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.constitution ol li ol > li:before {
+  content: counters(item, ".") " ";
+}
